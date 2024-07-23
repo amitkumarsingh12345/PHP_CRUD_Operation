@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("download2.jpg");
+}
+
+.con{
+    border-radius: 3px;
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 5px 5px 20px;
+}
+.con .title{
+    font-size: 26px;
+    font-weight: 700;
+    color:aquamarine;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.con .form{
+    width:100%;
+}
+.con .form .input_feild{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.con .form .input_feild label{
+    /* border:2px solid; */
+    width:150px;
+    font-size: 18px;
+} 
+.con .form .input_feild .input,
+.con .form .input_feild .textarea
+{
+    width: 80%;
+    height: 30px;
+    border:1px solid aquamarine;
+    outline: none;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 8px 8px;
+    transition: all 0.5s ease;
+}
+.con .form .input_feild .textarea{
+    resize: none;
+    height: 40px;
+}
+.con .form .input_feild .box{
+    position: relative;
+    outline: none;
+    border: 1px solid aquamarine;
+    width: 80%;
+    border-radius: 3px;
+    height: 35px;
+    /* -webkit-appearance: none; */
+    /* appearance: none; */
+}
+.con .form .input_feild .input:focus,
+.con .form .input_feild .box:focus,
+.con .form .input_feild .textarea:focus
+{
+    border:2px solid yellow;
+}
+.con .form .input_feild  p{
+    font-size: 20px;
+    color:#757575;
+    /* margin-left: 20px; */
+}
+.con .form .input_feild .check{
+   height: 20px;
+   width: 20px;
+   position: relative;
+   display: block;
+   cursor: pointer;
+}   
+.con .form .input_feild .check input[type="checkbox"]{
+   color: red;
+   position:absolute;
+   top: 0px;
+   left: 0px;
+}
+.con .form .input_feild term .check{
+ height: 40px;
+}
+.con .form .input_feild .btn{
+  height: 40px;
+  width:100%;   
+  font-size: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  border-color: aquamarine;
+  background-color: aquamarine;
+}
+.con .form .input_feild:last-child{
+    margin-bottom: 0;
+}
+.con .form .input_feild .btn:hover{
+    background-color: green;
+    border-color: green;
+    color: white;
+}
+@media (max-width:420px){
+    .con .form .input_feild{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .con .form .input_feild label{
+        margin: 5px;
+    }
+    .con .form .input_feild.term{
+      flex-direction: row;
+    }
+}
